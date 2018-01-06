@@ -7,20 +7,21 @@ include "bd.php";
 
 		if(!empty($password))
 		{
-      $query      = mysql_query("SELECT * FROM `1` WHERE email = '$email' AND password = '$password'");
+			$query = mysql_query("SELECT * FROM `1` WHERE email = '$email' AND password = '$password'");
+      //$query = mysql_query("SELECT * FROM `1` WHERE email = '$email');
 
       if (mysql_num_rows($query)>0)
-			{
+			{echo ($query);
+				session_start();
+				$_SESSION['email'] = $email;
+				//$_SESSION['username'] = $username;
+				$_SESSION['password'] = $password;
+
 				echo ('You have successfully authorized');
-
-				setcookie("email", $email, time() + 3600 * 24 * 190);
-        setcookie("username", $username, time() + 3600 * 24 * 190);
-	      setcookie("password", $password, time() + 3600 * 24 * 190);
-
-				echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
+				//echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
 			}
 		}else{
-			echo ('This email is already used');
+			echo ('Wrong login or password');
 		}
 	}
 ?>

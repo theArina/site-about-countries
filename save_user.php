@@ -15,9 +15,10 @@
 				$query = mysql_query("INSERT INTO `1` (`email`,`username`,`password`)
 				VALUES('$email', '$username', '$password')") or die(mysql_error());
 
-				setcookie("email", $email, time() + 3600 * 24 * 190);
-				setcookie("username", $username, time() + 3600 * 24 * 190);
-	      setcookie("password", $password, time() + 3600 * 24 * 190);
+				session_start();
+				$_SESSION['email'] = $email;
+				$_SESSION['username'] = $username;
+				$_SESSION['password'] = $password;
 
 				//echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
 				echo ('You have successfully authorized');
