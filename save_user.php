@@ -21,10 +21,11 @@
 				$_SESSION['password'] = $password;
 
 				//echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
-				echo ('You have successfully authorized');
-			}
+				echo ('You have successfully registered');
+
 		}else{
 			echo ('This email is already used');
+			}
 		}
 	}
 ?>
