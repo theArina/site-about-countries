@@ -11,7 +11,7 @@
     <body>
 	<div align="center" style="margin-top: 20px;">
 		<h1 style="color:black;">Sign up</h1>
-			<form action="save_user.php" method="POST">
+			<form action="reg.php" method="POST">
 					<input type="email" name="email" placeholder="Enter email" required>
 				<br><br>
 					<input type="text" name="username"  placeholder="Enter username" required>
@@ -21,7 +21,7 @@
 					<button type="submit" name="go" style="background-color:#ffffff; cursor:pointer;">Sign up</button>
 				<br><br>
 				<a href ="../index.php" style="color:black">Homepage</a>
-			</form> 
+			</form>
 	</div>
 		<footer>
 		Copyright Arina M. 2017

@@ -16,9 +16,9 @@ header{
 	max-height: 50px;
 }
 body {
-	color: #BDE6FA;
+	/* color: #BDE6FA; */
 	background-image: url(pages/elitefon.ru_5290.jpg);
-	background-size: cover;  
+	background-size: cover;
 	height: 100%;
 	margin-bottom: 0px;
 	overflow-x: auto;
@@ -52,11 +52,11 @@ h1{
 }
 table.newstable {
 	margin-top: 20px;
-	width: 100%; 
+	width: 100%;
 	border-spacing: 10px;
 }
 td.newsitem{
-	width: 18%; 
+	width: 18%;
 	vertical-align: top;
 }
 table.main {
@@ -67,14 +67,14 @@ tbody{
 	width: 100%;
 }
 img{
-	width: 100%; 
+	width: 100%;
 }
 h2{
 	color: #ffffff;
 }
 footer{
 	color: #ECF7FD;
-	/* position: absolute; /* Абсолютное позиционирование */ 
+	/* position: absolute; /* Абсолютное позиционирование */
     bottom: 10px; /* Положение от нижнего края */
 	left: 10%;
 	position: fixed;

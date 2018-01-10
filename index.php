@@ -1,24 +1,24 @@
 <?php
 	session_start();
-?>
+	?>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="style.css" rel="stylesheet" type="text/css">
 <head>
-<link href="pages/1.ico" rel="icon"  type="image/x-icon"> 
-<title>mysite</title>
+<link href="pages/1.ico" rel="icon"  type="image/x-icon">
+<title>MySite</title>
 </head>
 <header>
-   <h1>The Ten Happiest Countries In The World</h1>
+   <h1>Ten Happiest Countries In The World</h1>
 </header>
 <body>
 <div class="semiopacity">
 	<table border="0" class="main">
 <tbody>
   	<td <class="news">
-	 
+
 				<table class="newstable" cellspacing="5">
-		
+
 		<tr>
 				<td class="newsitem">
 			<h2 class="hdr2">Norway</h2>
@@ -55,9 +55,9 @@
 			<table border="0" class="main">
 <tbody>
   	<td <td class="news">
-	
+
 				<table class="newstable" cellspacing="5">
-		
+
 		<tr>
 				<td class="newsitem">
 			<h2 class="hdr2">Netherlands</h2>
@@ -93,11 +93,15 @@
 		</table>
 		<br><br><br>
 	<div align="center">
-	<a href="enter.php">Login</a> 
+		<?php
+			echo "You are logged in as $user";
+		?>
+		<br><br><br>
+	<a href="enter.php">Login</a>
 	<br><br>or<br><br>
-	<a href="reg.php">Registration</a> 
+	<a href="reg.php">Registration</a>
 	</div>
-	
+
 		<footer>
 		Copyright Arina M. 2017
 		</footer>

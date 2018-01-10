@@ -8,23 +8,22 @@
 
 		if(!empty($password))
 		{
-			$data = mysql_query("SELECT * FROM `1` WHERE email = '$email'");
+			$data = mysql_query("SELECT email FROM `1` WHERE email = '$email'");
 
 			if( mysql_num_rows($data) == 0)
 			{
 				$query = mysql_query("INSERT INTO `1` (`email`,`username`,`password`)
 				VALUES('$email', '$username', '$password')") or die(mysql_error());
 
-				session_start();
 				$_SESSION['email'] = $email;
 				$_SESSION['username'] = $username;
 				$_SESSION['password'] = $password;
 
 				//echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
-				echo ('You have successfully registered');
+				echo "<br><center>You have successfully registered as $username</center>";
 
 		}else{
-			echo ('This email is already used');
+			echo "<br><center>This email is already used</center>";
 			}
 		}
 	}
