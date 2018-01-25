@@ -1,14 +1,8 @@
  <?php
  	require "bd.php";
 	include "u_check.php";
-	// if (empty($_SESSION['login']) or empty($_SESSION['id']))
-// {
-	// echo "You are the guest<br>";
-// }
-// else {
-// echo "You are:".$_SESSION['login']."<br>";
-// }
  ?>
+ <!DOCTYPE html>
 <html>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="1.ico" rel="icon"  type="image/x-icon">

@@ -1,6 +1,7 @@
 <?php
 	session_start();
-	?>
+?>
+	<!DOCTYPE html>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -94,12 +95,20 @@
 		<br><br><br>
 	<div align="center">
 		<?php
-			echo "You are logged in as $user";
-		?>
-		<br><br><br>
-	<a href="enter.php">Login</a>
-	<br><br>or<br><br>
-	<a href="reg.php">Registration</a>
+			echo "You are logged in as $_SESSION[username]";
+			if($_SESSION[username] == "guest")
+			{
+				echo "<br><br><br>
+					<a href='enter.php'>Login</a>";
+				echo "<br><br>or<br><br>
+					<a href='reg.php'>Registration</a>";
+			}
+			else
+			echo "<br><br><br>
+			<button type='submit' name='out'
+			style='background-color:rgba(256, 256, 256, 0.3); cursor:pointer;'>
+			Log out</button>";
+		 ?>
 	</div>
 
 		<footer>
