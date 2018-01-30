@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
-<link href="style_pages.css" rel="stylesheet" type="text/css">
+<link href="stylePages.css" rel="stylesheet" type="text/css">
 <head><meta charset="utf-8">
-<link href="1.ico" rel="icon"  type="image/x-icon">
+<link href="/pic/1.ico" rel="icon"  type="image/x-icon">
 <title>Sweden</title>
 </head>
 <header>
@@ -9,11 +10,11 @@
 </header>
 <body>
 <div class="semiopacity">
-			<img  src="stockholm-in-winter1.jpg" class="fig" >
+			<img  src="/pic/stockholm-in-winter1.jpg" class="fig" >
 			<h2 align="center">Sweden</h2>
 			<p class="text">
 
-        Sweden, officially the Kingdom of Sweden, is a Scandinavian country in Northern Europe. It borders Norway 
+        Sweden, officially the Kingdom of Sweden, is a Scandinavian country in Northern Europe. It borders Norway
 to the west and north and Finland to the east, and is connected to Denmark in the southwest by a bridge-tunnel
  across the Öresund. At 450,295 square kilometres (173,860 sq mi), Sweden is the third-largest country in the
  European Union by area. Sweden has a total population of 10 million of which 2.3 million has a foreign background.
@@ -22,10 +23,9 @@ to the west and north and Finland to the east, and is connected to Denmark in th
 
 	</p>
 <a href ="../index.php">homepage</a>
-
-	<footer>
-		Copyright Arina M. 2017
-		</footer>
+<?php
+	include "../footer.php";
+?>
 </body>
 </div>
 </html>

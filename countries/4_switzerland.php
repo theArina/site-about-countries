@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
-<link href="style_pages.css" rel="stylesheet" type="text/css">
+<link href="stylePages.css" rel="stylesheet" type="text/css">
 <head><meta charset="utf-8">
-<link href="1.ico" rel="icon"  type="image/x-icon">
+<link href="/pic/1.ico" rel="icon"  type="image/x-icon">
 <title>Switzerland</title>
 </head>
 <header>
@@ -9,7 +10,7 @@
 </header>
 <body>
 <div class="semiopacity">
-			<img  src="switzjpg.jpg" class="fig" >
+			<img  src="/pic/switzjpg.jpg" class="fig" >
 			<h2 align="center">Switzerland</h2>
 			<p class="text">
 
@@ -23,10 +24,9 @@ where the largest cities are to be found: among them are the two global cities a
 
 	</p>
 <a href ="../index.php">homepage</a>
-
-	<footer>
-		Copyright Arina M. 2017
-		</footer>
+<?php
+	include "../footer.php";
+?>
 </body>
 </div>
 </html>

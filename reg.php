@@ -1,10 +1,11 @@
 <?php
 	include "bd.php";
-	include "save_user.php";
+	include "checkUser.php";
 ?>
+<!DOCTYPE html>
 <html>
 <link href="style.css" rel="stylesheet" type="text/css">
-<link href="1.ico" rel="icon"  type="image/x-icon">
+<link href="/pic/1.ico" rel="icon"  type="image/x-icon">
     <head>
     <title>Check in</title>
     </head>
@@ -23,8 +24,8 @@
 				<a href ="../index.php" style="color:black">Homepage</a>
 			</form>
 	</div>
-		<footer>
-		Copyright Arina M. 2017
-		</footer>
+  <?php
+  	include "footer.php";
+  ?>
     </body>
 </html>

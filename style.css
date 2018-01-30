@@ -2,14 +2,14 @@ html, body {
 	margin-top:0px;
 	padding:0px;
  }
-header{
+header {
+	background-color: #BDE6FA;
 	text-align: center;
 	margin-top: 0px;
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-bottom: 0px;
 	font-size: 20px;
-	background-color: #BDE6FA;
 	padding:0px;
 	height: 50px;
 	min-width: 750px;
@@ -17,65 +17,73 @@ header{
 }
 body {
 	color: #BDE6FA;
-	background-image: url(pages/elitefon.ru_5290.jpg);
+	background-image: url(pic/elitefon.ru_5290.jpg);
 	background-size: cover;
+	background-attachment: fixed;
 	height: 100%;
 	margin-bottom: 0px;
 	overflow-x: auto;
-	background-attachment: fixed;
 }
  .semiopacity {
 	background-color: rgba(0, 0, 0, 0.8);
 	height: 100%;
+	min-width: 750px;
+	min-height: 800px;
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-top:0px;
-	min-width: 750px;
-	min-height: 800px;
-	 padding:0px;
-   }
+	padding:0px;
+  }
+
 A {
-    color:  #6496F7; /* Цвет ссылок */
+  color:  #6496F7;
 	text-decoration: none;
-   }
+}
  A:visited {
-    color: #cecece; /* Цвет посещенных ссылок */
-   }
- A:hover{
-	color: #7B5889;
+    color: #cecece;
+ }
+ A:hover {
+	  color: #7B5889;
  }
  A:active {
-    color: #ffff00; /* Цвет активных ссылок */
-   }
-h1{
+    color: #ffff00;
+ }
+
+h1 {
 	color: black;
 }
-table.newstable {
+
+h2 {
+	color: #ffffff;
+}
+
+table.table {
 	margin-top: 20px;
 	width: 100%;
 	border-spacing: 10px;
 }
-td.newsitem{
+
+td.item {
 	width: 18%;
 	vertical-align: top;
 }
+
 table.main {
 	width: 100%;
 	border-collapse: collapse;
 }
-tbody{
+
+tbody {
 	width: 100%;
 }
-img{
+
+img {
 	width: 100%;
 }
-h2{
-	color: #ffffff;
-}
-footer{
+
+footer {
+  position: fixed;
 	color: #ECF7FD;
-	/* position: absolute; /* Абсолютное позиционирование */
-    bottom: 10px; /* Положение от нижнего края */
+  bottom: 10px;
 	left: 10%;
-	position: fixed;
 }

@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
-<link href="style_pages.css" rel="stylesheet" type="text/css">
+<link href="stylePages.css" rel="stylesheet" type="text/css">
 <head><meta charset="utf-8">
-<link href="1.ico" rel="icon"  type="image/x-icon">
+<link href="/pic/1.ico" rel="icon"  type="image/x-icon">
 <title>Netherlands</title>
 </head>
 <header>
@@ -9,7 +10,7 @@
 </header>
 <body>
 <div class="semiopacity">
-			<img  src="amsterdam--netherlands.jpg" class="fig" >
+			<img  src="/pic/amsterdam--netherlands.jpg" class="fig" >
 			<h2 align="center">Netherlands</h2>
 			<p class="text">
 
@@ -24,10 +25,9 @@ Together with three island territories in the Caribbean (Bonaire, Sint Eustatius
 
 	</p>
 <a href ="../index.php">homepage</a>
-
-	<footer>
-		Copyright Arina M. 2017
-		</footer>
+<?php
+	include "../footer.php";
+?>
 </body>
 </div>
 </html>
