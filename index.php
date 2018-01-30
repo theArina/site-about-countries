@@ -93,16 +93,11 @@ session_start();
 		</table>
 		<br><br><br>
 	<div align="center">
-		<?php
-		if($_SESSION['username'] == NULL)
-		$_SESSION['username'] = guest;
-
-			echo "You are logged in as $_SESSION[username]";
-		 ?>
-		<br><br><br>
 			 <a href='enter.php'>Login</a>
 		 <br><br>or<br><br>
-			 <a href='reg.php'>Registration</a>
+     <a href='reg.php'>Registration</a>
+		 <p align="right" style="margin-right: 20px;">
+       <a href='secret_page.php'>Secret page</a></p>
 	</div>
 
 		<footer>

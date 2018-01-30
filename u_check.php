@@ -17,7 +17,6 @@
 				$_SESSION['password'] = $password;
 
 				echo "<br><center><p style='color: black;'>You have successfully authorized as $_SESSION[username]</p></center>";
-				//echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
 			}else{
 			echo "<br><center>Wrong login or password</center>";
 		  }
