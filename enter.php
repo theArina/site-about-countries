@@ -2,7 +2,6 @@
  	require "bd.php";
 	include "u_check.php";
  ?>
- <!DOCTYPE html>
 <html>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="1.ico" rel="icon"  type="image/x-icon">

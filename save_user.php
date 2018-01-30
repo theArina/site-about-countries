@@ -20,7 +20,7 @@
 				$_SESSION['password'] = $password;
 
 				//echo "<META HTTP-EQUIV='Refresh' Content='0, URL=index.php'>";
-				echo "<br><center>You have successfully registered as $username</center>";
+				echo "<br><center><p style='color: black;'>You have successfully registered as $username</p></center>";
 
 		}else{
 			echo "<br><center>This email is already used</center>";
